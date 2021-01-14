@@ -18,9 +18,11 @@ It also provides new peer join to test peer bootstrap time.
     Docker 19.03.8
 
 ## References
-    Hyperledger Fabric (https://github.com/hyperledger/fabric)
-    Hyperledger Fabric Samples (https://github.com/hyperledger/fabric-samples)
-    Hyperledger Fabric Read the Docs (http://hyperledger-fabric.readthedocs.io/en/release-1.4/)
-    New Peer Join (https://wahabjawed.medium.com/extending-hyperledger-fabric-network-adding-a-new-peer-4f52f70a7217)
+    Hyperledger Fabric
+     - https://github.com/hyperledger/fabric
+     - https://github.com/hyperledger/fabric-samples
+     - http://hyperledger-fabric.readthedocs.io/en/release-1.4/
+    New Peer Join
+     - https://wahabjawed.medium.com/extending-hyperledger-fabric-network-adding-a-new-peer-4f52f70a7217
 
 ### Dongguk Univ., INLab 🇰🇷
