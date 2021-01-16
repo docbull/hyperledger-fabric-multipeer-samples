@@ -57,6 +57,44 @@ setGlobals() {
       CORE_PEER_ADDRESS=peer9.org1.example.com:18051
     elif [ $PEER -eq 10 ]; then
       CORE_PEER_ADDRESS=peer10.org1.example.com:19051
+    elif [ $PEER -eq 11 ]; then
+      CORE_PEER_ADDRESS=peer11.org1.example.com:19151
+    elif [ $PEER -eq 12 ]; then
+      CORE_PEER_ADDRESS=peer12.org1.example.com:19251
+    elif [ $PEER -eq 13 ]; then
+      CORE_PEER_ADDRESS=peer13.org1.example.com:19351
+    elif [ $PEER -eq 14 ]; then
+      CORE_PEER_ADDRESS=peer14.org1.example.com:19451
+    elif [ $PEER -eq 15 ]; then
+      CORE_PEER_ADDRESS=peer15.org1.example.com:19551
+    elif [ $PEER -eq 16 ]; then
+      CORE_PEER_ADDRESS=peer16.org1.example.com:19651
+    elif [ $PEER -eq 17 ]; then
+      CORE_PEER_ADDRESS=peer17.org1.example.com:19751
+    elif [ $PEER -eq 18 ]; then
+      CORE_PEER_ADDRESS=peer18.org1.example.com:19851
+    elif [ $PEER -eq 19 ]; then
+      CORE_PEER_ADDRESS=peer19.org1.example.com:19951
+    elif [ $PEER -eq 20 ]; then
+      CORE_PEER_ADDRESS=peer20.org1.example.com:20051
+    elif [ $PEER -eq 21 ]; then
+      CORE_PEER_ADDRESS=peer21.org1.example.com:20151
+    elif [ $PEER -eq 22 ]; then
+      CORE_PEER_ADDRESS=peer22.org1.example.com:20251
+    elif [ $PEER -eq 23 ]; then
+      CORE_PEER_ADDRESS=peer23.org1.example.com:20351
+    elif [ $PEER -eq 24 ]; then
+      CORE_PEER_ADDRESS=peer24.org1.example.com:20451
+    elif [ $PEER -eq 25 ]; then
+      CORE_PEER_ADDRESS=peer25.org1.example.com:20551
+    elif [ $PEER -eq 26 ]; then
+      CORE_PEER_ADDRESS=peer26.org1.example.com:20651
+    elif [ $PEER -eq 27 ]; then
+      CORE_PEER_ADDRESS=peer27.org1.example.com:20751
+    elif [ $PEER -eq 28 ]; then
+      CORE_PEER_ADDRESS=peer28.org1.example.com:20851
+    elif [ $PEER -eq 29 ]; then
+      CORE_PEER_ADDRESS=peer29.org1.example.com:20951
     else
       echo "NO MORE PEERS"
     fi
@@ -66,7 +104,7 @@ setGlobals() {
     CORE_PEER_MSPCONFIGPATH=/opt/gopath/src/github.com/hyperledger/fabric/peer/crypto/peerOrganizations/org2.example.com/users/Admin@org2.example.com/msp
     if [ $PEER -eq 0 ]; then
       CORE_PEER_ADDRESS=peer0.org2.example.com:9051
-    else
+    elif [ $PEER -eq 1 ]; then
       CORE_PEER_ADDRESS=peer1.org2.example.com:10051
     fi
 
