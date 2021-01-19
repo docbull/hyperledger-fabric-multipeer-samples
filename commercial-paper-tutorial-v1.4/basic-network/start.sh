@@ -25,7 +25,7 @@ docker ps -a
 
 # wait for Hyperledger Fabric to start
 # incase of errors when running later commands, issue export FABRIC_START_TIMEOUT=<larger number>
-export FABRIC_START_TIMEOUT=40
+export FABRIC_START_TIMEOUT=25
 #echo ${FABRIC_START_TIMEOUT}
 sleep ${FABRIC_START_TIMEOUT}
 
