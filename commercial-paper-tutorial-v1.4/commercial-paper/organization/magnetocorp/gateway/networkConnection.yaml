@@ -115,11 +115,6 @@ channels:
         chaincodeQuery: true
         ledgerQuery: true
         eventSource: true
-      peer11.org1.example.com:
-        endorsingPeer: true
-        chaincodeQuery: true
-        ledgerQuery: true
-        eventSource: true
 
 #
 # list of participating organizations in this network
@@ -140,7 +135,6 @@ organizations:
       - peer8.org1.example.com
       - peer9.org1.example.com
       - peer10.org1.example.com
-      - peer11.org1.example.com
 
     # [Optional]. Certificate Authorities issue certificates for identification purposes in a Fabric based
     # network. Typically certificates provisioning is done in a separate process outside of the
@@ -234,12 +228,6 @@ peers:
     url: grpc://localhost:17051
     grpcOptions:
       ssl-target-name-override: peer10.org1.example.com
-      request-timeout: 120001
-  peer11.org1.example.com:
-    # this URL is used to send endorsement and query requests
-    url: grpc://localhost:18051
-    grpcOptions:
-      ssl-target-name-override: peer11.org1.example.com
       request-timeout: 120001
 
 # Fabric-CA is a special kind of Certificate Authority provided by Hyperledger Fabric which allows
