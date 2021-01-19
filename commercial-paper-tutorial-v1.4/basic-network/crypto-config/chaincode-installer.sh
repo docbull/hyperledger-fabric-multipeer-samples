@@ -28,6 +28,46 @@ export CORE_PEER_ADDRESS=peer9.org1.example.com:16051
 peer chaincode install -n papercontract -v 0 -p /opt/gopath/src/github.com/contract -l node
 export CORE_PEER_ADDRESS=peer10.org1.example.com:17051
 peer chaincode install -n papercontract -v 0 -p /opt/gopath/src/github.com/contract -l node
+export CORE_PEER_ADDRESS=peer11.org1.example.com:17151
+peer chaincode install -n papercontract -v 0 -p /opt/gopath/src/github.com/contract -l node
+export CORE_PEER_ADDRESS=peer12.org1.example.com:17251
+peer chaincode install -n papercontract -v 0 -p /opt/gopath/src/github.com/contract -l node
+export CORE_PEER_ADDRESS=peer13.org1.example.com:17351
+peer chaincode install -n papercontract -v 0 -p /opt/gopath/src/github.com/contract -l node
+export CORE_PEER_ADDRESS=peer14.org1.example.com:17451
+peer chaincode install -n papercontract -v 0 -p /opt/gopath/src/github.com/contract -l node
+export CORE_PEER_ADDRESS=peer15.org1.example.com:17551
+peer chaincode install -n papercontract -v 0 -p /opt/gopath/src/github.com/contract -l node
+export CORE_PEER_ADDRESS=peer16.org1.example.com:17651
+peer chaincode install -n papercontract -v 0 -p /opt/gopath/src/github.com/contract -l node
+export CORE_PEER_ADDRESS=peer17.org1.example.com:17751
+peer chaincode install -n papercontract -v 0 -p /opt/gopath/src/github.com/contract -l node
+export CORE_PEER_ADDRESS=peer18.org1.example.com:17851
+peer chaincode install -n papercontract -v 0 -p /opt/gopath/src/github.com/contract -l node
+export CORE_PEER_ADDRESS=peer19.org1.example.com:17951
+peer chaincode install -n papercontract -v 0 -p /opt/gopath/src/github.com/contract -l node
+export CORE_PEER_ADDRESS=peer20.org1.example.com:18051
+peer chaincode install -n papercontract -v 0 -p /opt/gopath/src/github.com/contract -l node
+export CORE_PEER_ADDRESS=peer21.org1.example.com:18151
+peer chaincode install -n papercontract -v 0 -p /opt/gopath/src/github.com/contract -l node
+export CORE_PEER_ADDRESS=peer22.org1.example.com:18251
+peer chaincode install -n papercontract -v 0 -p /opt/gopath/src/github.com/contract -l node
+export CORE_PEER_ADDRESS=peer23.org1.example.com:18351
+peer chaincode install -n papercontract -v 0 -p /opt/gopath/src/github.com/contract -l node
+export CORE_PEER_ADDRESS=peer24.org1.example.com:18451
+peer chaincode install -n papercontract -v 0 -p /opt/gopath/src/github.com/contract -l node
+export CORE_PEER_ADDRESS=peer25.org1.example.com:18551
+peer chaincode install -n papercontract -v 0 -p /opt/gopath/src/github.com/contract -l node
+export CORE_PEER_ADDRESS=peer26.org1.example.com:18651
+peer chaincode install -n papercontract -v 0 -p /opt/gopath/src/github.com/contract -l node
+export CORE_PEER_ADDRESS=peer27.org1.example.com:18751
+peer chaincode install -n papercontract -v 0 -p /opt/gopath/src/github.com/contract -l node
+export CORE_PEER_ADDRESS=peer28.org1.example.com:18851
+peer chaincode install -n papercontract -v 0 -p /opt/gopath/src/github.com/contract -l node
+export CORE_PEER_ADDRESS=peer29.org1.example.com:18951
+peer chaincode install -n papercontract -v 0 -p /opt/gopath/src/github.com/contract -l node
+export CORE_PEER_ADDRESS=peer30.org1.example.com:19051
+peer chaincode install -n papercontract -v 0 -p /opt/gopath/src/github.com/contract -l node
 
 echo
 echo "Instantiating smart contarct ..."
