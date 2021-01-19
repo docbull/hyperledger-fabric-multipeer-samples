@@ -14,18 +14,18 @@ export BYFN_CA1_PRIVATE_KEY=$(cd crypto-config/peerOrganizations/org1.example.co
 docker-compose -f docker-compose.yml down
 
 PEER_TIME=$(date +%s%3N)
-docker-compose -f docker-compose.yml up -d peer0.org1.example.com
+docker-compose -f docker-compose.yml up -d peer0.org1.example.com 
 PEER_END=$(date +%s%3N)
 echo "It took $(($PEER_END - $PEER_TIME)) milliseconds..."
 
-docker-compose -f docker-compose.yml up -d ca.example.com orderer.example.com couchdb0 peer1.org1.example.com couchdb1 peer2.org1.example.com couchdb2 peer3.org1.example.com couchdb3 peer4.org1.example.com couchdb4 peer5.org1.example.com couchdb5 peer6.org1.example.com couchdb6 peer7.org1.example.com couchdb7 peer8.org1.example.com couchdb8 peer9.org1.example.com couchdb9 peer10.org1.example.com couchdb10 peer11.org1.example.com couchdb11 peer12.org1.example.com couchdb12 peer13.org1.example.com couchdb13 peer14.org1.example.com couchdb14 peer15.org1.example.com couchdb15 peer16.org1.example.com couchdb16 peer17.org1.example.com couchdb17 peer18.org1.example.com couchdb18 peer19.org1.example.com couchdb19 peer20.org1.example.com couchdb20 peer21.org1.example.com couchdb21 peer22.org1.example.com couchdb22 peer23.org1.example.com couchdb23 peer24.org1.example.com couchdb24 peer25.org1.example.com couchdb25 peer26.org1.example.com couchdb26 peer27.org1.example.com couchdb27 peer28.org1.example.com couchdb28 peer29.org1.example.com couchdb29 peer30.org1.example.com couchdb30
+docker-compose -f docker-compose.yml up -d ca.example.com orderer.example.com couchdb0 peer1.org1.example.com couchdb1 peer2.org1.example.com couchdb2 peer3.org1.example.com couchdb3 peer4.org1.example.com couchdb4 peer5.org1.example.com couchdb5 peer6.org1.example.com couchdb6 peer7.org1.example.com couchdb7 peer8.org1.example.com couchdb8 peer9.org1.example.com couchdb9 peer10.org1.example.com couchdb10 peer11.org1.example.com couchdb11 peer12.org1.example.com couchdb12 peer13.org1.example.com couchdb13 peer14.org1.example.com couchdb14 peer15.org1.example.com couchdb15 peer16.org1.example.com couchdb16 peer17.org1.example.com couchdb17 peer18.org1.example.com couchdb18 peer19.org1.example.com couchdb19 peer20.org1.example.com couchdb20
 
 #docker-compose -f docker-compose.yml up -d ca.example.com orderer.example.com peer0.org1.example.com couchdb0 peer1.org1.example.com couchdb1 peer2.org1.example.com couchdb2 peer3.org1.example.com couchdb3 peer4.org1.example.com couchdb4 peer5.org1.example.com couchdb5 peer6.org1.example.com couchdb6 peer7.org1.example.com couchdb7 peer8.org1.example.com couchdb8 peer9.org1.example.com couchdb9 peer10.org1.example.com couchdb10
 docker ps -a
 
 # wait for Hyperledger Fabric to start
 # incase of errors when running later commands, issue export FABRIC_START_TIMEOUT=<larger number>
-export FABRIC_START_TIMEOUT=30
+export FABRIC_START_TIMEOUT=40
 #echo ${FABRIC_START_TIMEOUT}
 sleep ${FABRIC_START_TIMEOUT}
 
@@ -77,23 +77,3 @@ docker exec -e "CORE_PEER_ADDRESS=peer18.org1.example.com:17851" -e "CORE_PEER_L
 docker exec -e "CORE_PEER_ADDRESS=peer19.org1.example.com:17951" -e "CORE_PEER_LOCALMSPID=Org1MSP" -e "CORE_PEER_MSPCONFIGPATH=/etc/hyperledger/msp/users/Admin@org1.example.com/msp" peer0.org1.example.com peer channel join -b mychannel.block
 
 docker exec -e "CORE_PEER_ADDRESS=peer20.org1.example.com:18051" -e "CORE_PEER_LOCALMSPID=Org1MSP" -e "CORE_PEER_MSPCONFIGPATH=/etc/hyperledger/msp/users/Admin@org1.example.com/msp" peer0.org1.example.com peer channel join -b mychannel.block
-
-docker exec -e "CORE_PEER_ADDRESS=peer21.org1.example.com:18151" -e "CORE_PEER_LOCALMSPID=Org1MSP" -e "CORE_PEER_MSPCONFIGPATH=/etc/hyperledger/msp/users/Admin@org1.example.com/msp" peer0.org1.example.com peer channel join -b mychannel.block
-
-docker exec -e "CORE_PEER_ADDRESS=peer22.org1.example.com:18251" -e "CORE_PEER_LOCALMSPID=Org1MSP" -e "CORE_PEER_MSPCONFIGPATH=/etc/hyperledger/msp/users/Admin@org1.example.com/msp" peer0.org1.example.com peer channel join -b mychannel.block
-
-docker exec -e "CORE_PEER_ADDRESS=peer23.org1.example.com:18351" -e "CORE_PEER_LOCALMSPID=Org1MSP" -e "CORE_PEER_MSPCONFIGPATH=/etc/hyperledger/msp/users/Admin@org1.example.com/msp" peer0.org1.example.com peer channel join -b mychannel.block
-
-docker exec -e "CORE_PEER_ADDRESS=peer24.org1.example.com:18451" -e "CORE_PEER_LOCALMSPID=Org1MSP" -e "CORE_PEER_MSPCONFIGPATH=/etc/hyperledger/msp/users/Admin@org1.example.com/msp" peer0.org1.example.com peer channel join -b mychannel.block
-
-docker exec -e "CORE_PEER_ADDRESS=peer25.org1.example.com:18551" -e "CORE_PEER_LOCALMSPID=Org1MSP" -e "CORE_PEER_MSPCONFIGPATH=/etc/hyperledger/msp/users/Admin@org1.example.com/msp" peer0.org1.example.com peer channel join -b mychannel.block
-
-docker exec -e "CORE_PEER_ADDRESS=peer26.org1.example.com:18651" -e "CORE_PEER_LOCALMSPID=Org1MSP" -e "CORE_PEER_MSPCONFIGPATH=/etc/hyperledger/msp/users/Admin@org1.example.com/msp" peer0.org1.example.com peer channel join -b mychannel.block
-
-docker exec -e "CORE_PEER_ADDRESS=peer27.org1.example.com:18751" -e "CORE_PEER_LOCALMSPID=Org1MSP" -e "CORE_PEER_MSPCONFIGPATH=/etc/hyperledger/msp/users/Admin@org1.example.com/msp" peer0.org1.example.com peer channel join -b mychannel.block
-
-docker exec -e "CORE_PEER_ADDRESS=peer28.org1.example.com:18851" -e "CORE_PEER_LOCALMSPID=Org1MSP" -e "CORE_PEER_MSPCONFIGPATH=/etc/hyperledger/msp/users/Admin@org1.example.com/msp" peer0.org1.example.com peer channel join -b mychannel.block
-
-docker exec -e "CORE_PEER_ADDRESS=peer29.org1.example.com:18951" -e "CORE_PEER_LOCALMSPID=Org1MSP" -e "CORE_PEER_MSPCONFIGPATH=/etc/hyperledger/msp/users/Admin@org1.example.com/msp" peer0.org1.example.com peer channel join -b mychannel.block
-
-docker exec -e "CORE_PEER_ADDRESS=peer30.org1.example.com:19051" -e "CORE_PEER_LOCALMSPID=Org1MSP" -e "CORE_PEER_MSPCONFIGPATH=/etc/hyperledger/msp/users/Admin@org1.example.com/msp" peer0.org1.example.com peer channel join -b mychannel.block
