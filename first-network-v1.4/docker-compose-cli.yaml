@@ -18,6 +18,25 @@ volumes:
   peer8.org1.example.com:
   peer9.org1.example.com:
   peer10.org1.example.com:
+  peer11.org1.example.com:
+  peer12.org1.example.com:
+  peer13.org1.example.com:
+  peer14.org1.example.com:
+  peer15.org1.example.com:
+  peer16.org1.example.com:
+  peer17.org1.example.com:
+  peer18.org1.example.com:
+  peer19.org1.example.com:
+  peer20.org1.example.com:
+  peer21.org1.example.com:
+  peer22.org1.example.com:
+  peer23.org1.example.com:
+  peer24.org1.example.com:
+  peer25.org1.example.com:
+  peer26.org1.example.com:
+  peer27.org1.example.com:
+  peer28.org1.example.com:
+  peer29.org1.example.com:
   peer0.org2.example.com:
   peer1.org2.example.com:
 
@@ -190,6 +209,272 @@ services:
     cap_add:
       - ALL
 
+  peer11.org1.example.com:
+    container_name: peer11.org1.example.com
+    extends:
+      file:  base/docker-compose-base.yaml
+      service: peer11.org1.example.com
+    environment:
+      # Leader peer configure options 
+      - CORE_PEER_GOSSIP_USELEADERELECTION=false
+      - CORE_PEER_GOSSIP_ORGLEADER=false
+    networks:
+      - byfn
+    cap_add:
+      - ALL
+
+  peer12.org1.example.com:
+    container_name: peer12.org1.example.com
+    extends:
+      file:  base/docker-compose-base.yaml
+      service: peer12.org1.example.com
+    environment:
+      # Leader peer configure options 
+      - CORE_PEER_GOSSIP_USELEADERELECTION=false
+      - CORE_PEER_GOSSIP_ORGLEADER=false
+    networks:
+      - byfn
+    cap_add:
+      - ALL
+
+  peer13.org1.example.com:
+    container_name: peer13.org1.example.com
+    extends:
+      file:  base/docker-compose-base.yaml
+      service: peer13.org1.example.com
+    environment:
+      # Leader peer configure options 
+      - CORE_PEER_GOSSIP_USELEADERELECTION=false
+      - CORE_PEER_GOSSIP_ORGLEADER=false
+    networks:
+      - byfn
+    cap_add:
+      - ALL
+
+  peer14.org1.example.com:
+    container_name: peer14.org1.example.com
+    extends:
+      file:  base/docker-compose-base.yaml
+      service: peer14.org1.example.com
+    environment:
+      # Leader peer configure options 
+      - CORE_PEER_GOSSIP_USELEADERELECTION=false
+      - CORE_PEER_GOSSIP_ORGLEADER=false
+    networks:
+      - byfn
+    cap_add:
+      - ALL
+
+  peer15.org1.example.com:
+    container_name: peer15.org1.example.com
+    extends:
+      file:  base/docker-compose-base.yaml
+      service: peer15.org1.example.com
+    environment:
+      # Leader peer configure options 
+      - CORE_PEER_GOSSIP_USELEADERELECTION=false
+      - CORE_PEER_GOSSIP_ORGLEADER=false
+    networks:
+      - byfn
+    cap_add:
+      - ALL
+
+  peer16.org1.example.com:
+    container_name: peer16.org1.example.com
+    extends:
+      file:  base/docker-compose-base.yaml
+      service: peer16.org1.example.com
+    environment:
+      # Leader peer configure options 
+      - CORE_PEER_GOSSIP_USELEADERELECTION=false
+      - CORE_PEER_GOSSIP_ORGLEADER=false
+    networks:
+      - byfn
+    cap_add:
+      - ALL
+
+  peer17.org1.example.com:
+    container_name: peer17.org1.example.com
+    extends:
+      file:  base/docker-compose-base.yaml
+      service: peer17.org1.example.com
+    environment:
+      # Leader peer configure options 
+      - CORE_PEER_GOSSIP_USELEADERELECTION=false
+      - CORE_PEER_GOSSIP_ORGLEADER=false
+    networks:
+      - byfn
+    cap_add:
+      - ALL
+
+  peer18.org1.example.com:
+    container_name: peer18.org1.example.com
+    extends:
+      file:  base/docker-compose-base.yaml
+      service: peer18.org1.example.com
+    environment:
+      # Leader peer configure options 
+      - CORE_PEER_GOSSIP_USELEADERELECTION=false
+      - CORE_PEER_GOSSIP_ORGLEADER=false
+    networks:
+      - byfn
+    cap_add:
+      - ALL
+
+  peer19.org1.example.com:
+    container_name: peer19.org1.example.com
+    extends:
+      file:  base/docker-compose-base.yaml
+      service: peer19.org1.example.com
+    environment:
+      # Leader peer configure options 
+      - CORE_PEER_GOSSIP_USELEADERELECTION=false
+      - CORE_PEER_GOSSIP_ORGLEADER=false
+    networks:
+      - byfn
+    cap_add:
+      - ALL
+
+  peer20.org1.example.com:
+    container_name: peer20.org1.example.com
+    extends:
+      file:  base/docker-compose-base.yaml
+      service: peer20.org1.example.com
+    environment:
+      # Leader peer configure options 
+      - CORE_PEER_GOSSIP_USELEADERELECTION=false
+      - CORE_PEER_GOSSIP_ORGLEADER=false
+    networks:
+      - byfn
+    cap_add:
+      - ALL
+
+  peer21.org1.example.com:
+    container_name: peer21.org1.example.com
+    extends:
+      file:  base/docker-compose-base.yaml
+      service: peer21.org1.example.com
+    environment:
+      # Leader peer configure options 
+      - CORE_PEER_GOSSIP_USELEADERELECTION=false
+      - CORE_PEER_GOSSIP_ORGLEADER=false
+    networks:
+      - byfn
+    cap_add:
+      - ALL
+
+  peer22.org1.example.com:
+    container_name: peer22.org1.example.com
+    extends:
+      file:  base/docker-compose-base.yaml
+      service: peer22.org1.example.com
+    environment:
+      # Leader peer configure options 
+      - CORE_PEER_GOSSIP_USELEADERELECTION=false
+      - CORE_PEER_GOSSIP_ORGLEADER=false
+    networks:
+      - byfn
+    cap_add:
+      - ALL
+
+  peer23.org1.example.com:
+    container_name: peer23.org1.example.com
+    extends:
+      file:  base/docker-compose-base.yaml
+      service: peer23.org1.example.com
+    environment:
+      # Leader peer configure options 
+      - CORE_PEER_GOSSIP_USELEADERELECTION=false
+      - CORE_PEER_GOSSIP_ORGLEADER=false
+    networks:
+      - byfn
+    cap_add:
+      - ALL
+
+  peer24.org1.example.com:
+    container_name: peer24.org1.example.com
+    extends:
+      file:  base/docker-compose-base.yaml
+      service: peer24.org1.example.com
+    environment:
+      # Leader peer configure options 
+      - CORE_PEER_GOSSIP_USELEADERELECTION=false
+      - CORE_PEER_GOSSIP_ORGLEADER=false
+    networks:
+      - byfn
+    cap_add:
+      - ALL
+
+  peer25.org1.example.com:
+    container_name: peer25.org1.example.com
+    extends:
+      file:  base/docker-compose-base.yaml
+      service: peer25.org1.example.com
+    environment:
+      # Leader peer configure options 
+      - CORE_PEER_GOSSIP_USELEADERELECTION=false
+      - CORE_PEER_GOSSIP_ORGLEADER=false
+    networks:
+      - byfn
+    cap_add:
+      - ALL
+
+  peer26.org1.example.com:
+    container_name: peer26.org1.example.com
+    extends:
+      file:  base/docker-compose-base.yaml
+      service: peer26.org1.example.com
+    environment:
+      # Leader peer configure options 
+      - CORE_PEER_GOSSIP_USELEADERELECTION=false
+      - CORE_PEER_GOSSIP_ORGLEADER=false
+    networks:
+      - byfn
+    cap_add:
+      - ALL
+
+  peer27.org1.example.com:
+    container_name: peer27.org1.example.com
+    extends:
+      file:  base/docker-compose-base.yaml
+      service: peer27.org1.example.com
+    environment:
+      # Leader peer configure options 
+      - CORE_PEER_GOSSIP_USELEADERELECTION=false
+      - CORE_PEER_GOSSIP_ORGLEADER=false
+    networks:
+      - byfn
+    cap_add:
+      - ALL
+
+  peer28.org1.example.com:
+    container_name: peer28.org1.example.com
+    extends:
+      file:  base/docker-compose-base.yaml
+      service: peer28.org1.example.com
+    environment:
+      # Leader peer configure options 
+      - CORE_PEER_GOSSIP_USELEADERELECTION=false
+      - CORE_PEER_GOSSIP_ORGLEADER=false
+    networks:
+      - byfn
+    cap_add:
+      - ALL
+
+  peer29.org1.example.com:
+    container_name: peer29.org1.example.com
+    extends:
+      file:  base/docker-compose-base.yaml
+      service: peer29.org1.example.com
+    environment:
+      # Leader peer configure options 
+      - CORE_PEER_GOSSIP_USELEADERELECTION=false
+      - CORE_PEER_GOSSIP_ORGLEADER=false
+    networks:
+      - byfn
+    cap_add:
+      - ALL
+
   peer0.org2.example.com:
     container_name: peer0.org2.example.com
     extends:
@@ -250,6 +535,25 @@ services:
       - peer8.org1.example.com
       - peer9.org1.example.com
       - peer10.org1.example.com
+      - peer11.org1.example.com
+      - peer12.org1.example.com
+      - peer13.org1.example.com
+      - peer14.org1.example.com
+      - peer15.org1.example.com
+      - peer16.org1.example.com
+      - peer17.org1.example.com
+      - peer18.org1.example.com
+      - peer19.org1.example.com
+      - peer20.org1.example.com
+      - peer21.org1.example.com
+      - peer22.org1.example.com
+      - peer23.org1.example.com
+      - peer24.org1.example.com
+      - peer25.org1.example.com
+      - peer26.org1.example.com
+      - peer27.org1.example.com
+      - peer28.org1.example.com
+      - peer29.org1.example.com
       - peer0.org2.example.com
       - peer1.org2.example.com
     networks:
